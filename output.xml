@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200727 07:42:17.278" rpa="false">
+<suite id="s1" name="Testcases" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases">
+<suite id="s1-s1" name="Basic cases" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases">
+<suite id="s1-s1-s1" name="TC 001 FacebookLogin" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_001_FacebookLogin.robot">
+<test id="s1-s1-s1-t1" name="Robot Facebook Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200727 07:42:17.688" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com'.</msg>
+<status status="PASS" starttime="20200727 07:42:17.687" endtime="20200727 07:42:23.841"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200727 07:42:23.844" endtime="20200727 07:42:26.028"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>subhashini17@gmail.com</arg>
+</arguments>
+<msg timestamp="20200727 07:42:26.029" level="INFO">Typing text 'subhashini17@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200727 07:42:26.029" endtime="20200727 07:42:26.388"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:pass</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20200727 07:42:26.390" level="INFO">Typing text '12345678' into text field 'id:pass'.</msg>
+<status status="PASS" starttime="20200727 07:42:26.389" endtime="20200727 07:42:26.668"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='submit']</arg>
+</arguments>
+<msg timestamp="20200727 07:42:26.669" level="INFO">Clicking button 'xpath://input[@type='submit']'.</msg>
+<status status="PASS" starttime="20200727 07:42:26.668" endtime="20200727 07:42:26.870"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200727 07:42:26.872" endtime="20200727 07:42:29.116"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:42:17.683" endtime="20200727 07:42:29.118" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:42:17.332" endtime="20200727 07:42:29.126"></status>
+</suite>
+<suite id="s1-s1-s2" name="TC 001 SetupandTeardown" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_001_SetupandTeardown.robot">
+<test id="s1-s1-s2-t1" name="Robot First test case">
+<kw name="Start Browser and maximise" type="setup">
+<msg timestamp="20200727 07:42:29.167" level="FAIL">No keyword with name 'Start Browser and maximise' found.</msg>
+<status status="FAIL" starttime="20200727 07:42:29.167" endtime="20200727 07:42:29.167"></status>
+</kw>
+<kw name="Close Browser Window" type="teardown">
+<msg timestamp="20200727 07:42:29.176" level="FAIL">No keyword with name 'Close Browser Window' found.</msg>
+<status status="FAIL" starttime="20200727 07:42:29.176" endtime="20200727 07:42:29.176">No keyword with name 'Close Browser Window' found.</status>
+</kw>
+<tags>
+<tag>Sanity</tag>
+</tags>
+<status status="FAIL" starttime="20200727 07:42:29.152" endtime="20200727 07:42:29.177" critical="yes">Setup failed:
+No keyword with name 'Start Browser and maximise' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser Window' found.</status>
+</test>
+<test id="s1-s1-s2-t2" name="Robot Next Test Case">
+<kw name="Start Browser and maximise" type="setup">
+<msg timestamp="20200727 07:42:29.190" level="FAIL">No keyword with name 'Start Browser and maximise' found.</msg>
+<status status="FAIL" starttime="20200727 07:42:29.190" endtime="20200727 07:42:29.190"></status>
+</kw>
+<kw name="Close Browser Window" type="teardown">
+<msg timestamp="20200727 07:42:29.197" level="FAIL">No keyword with name 'Close Browser Window' found.</msg>
+<status status="FAIL" starttime="20200727 07:42:29.197" endtime="20200727 07:42:29.197">No keyword with name 'Close Browser Window' found.</status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" starttime="20200727 07:42:29.179" endtime="20200727 07:42:29.198" critical="yes">Setup failed:
+No keyword with name 'Start Browser and maximise' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser Window' found.</status>
+</test>
+<doc>This file is having setup and teardown functionality</doc>
+<status status="FAIL" starttime="20200727 07:42:29.135" endtime="20200727 07:42:29.201"></status>
+</suite>
+<suite id="s1-s1-s3" name="TC 001 Start close Browser" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_001_Start_close_Browser.robot">
+<test id="s1-s1-s3-t1" name="TC_001 Browser Start and Close">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200727 07:42:29.211" level="INFO">Opening browser 'Firefox' to base url 'http://thetestingworld.com/testings'.</msg>
+<msg timestamp="20200727 07:42:29.261" level="INFO">Firefox driver log is always forced to to: C:\Users\Subhashini\PycharmProjects\RobotAutomation\geckodriver-1.log</msg>
+<status status="PASS" starttime="20200727 07:42:29.210" endtime="20200727 07:42:54.974"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200727 07:42:54.975" endtime="20200727 07:42:59.940"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:42:29.209" endtime="20200727 07:42:59.941" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:42:29.204" endtime="20200727 07:42:59.943"></status>
+</suite>
+<suite id="s1-s1-s4" name="TC 001 StartBrowser" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_001_StartBrowser.robot">
+<test id="s1-s1-s4-t1" name="Robot Registration Page Input">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200727 07:42:59.959" level="INFO">Opening browser 'Chrome' to base url 'http://thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20200727 07:42:59.959" endtime="20200727 07:43:06.194"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200727 07:43:06.195" endtime="20200727 07:43:08.331"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>2seconds</arg>
+</arguments>
+<status status="PASS" starttime="20200727 07:43:08.332" endtime="20200727 07:43:08.332"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>HelloSubhashini</arg>
+</arguments>
+<msg timestamp="20200727 07:43:08.333" level="INFO">Typing text 'HelloSubhashini' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20200727 07:43:08.332" endtime="20200727 07:43:14.724"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@name='fld_email']</arg>
+<arg>subhashini17@gmail.com</arg>
+</arguments>
+<msg timestamp="20200727 07:43:14.725" level="INFO">Typing text 'subhashini17@gmail.com' into text field 'xpath://input[@name='fld_email']'.</msg>
+<status status="PASS" starttime="20200727 07:43:14.725" endtime="20200727 07:43:20.993"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>add_type</arg>
+<arg>office</arg>
+</arguments>
+<msg timestamp="20200727 07:43:20.995" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20200727 07:43:20.995" endtime="20200727 07:43:27.112"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:sex</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200727 07:43:27.113" level="INFO">Selecting options from selection list 'name:sex' by value 2.</msg>
+<status status="PASS" starttime="20200727 07:43:27.113" endtime="20200727 07:43:41.285"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:country</arg>
+<arg>India</arg>
+</arguments>
+<msg timestamp="20200727 07:43:41.286" level="INFO">Selecting options from selection list 'name:country' by label India.</msg>
+<status status="PASS" starttime="20200727 07:43:41.286" endtime="20200727 07:43:55.399"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:state</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200727 07:43:55.400" level="INFO">Selecting options from selection list 'name:state' by value 2.</msg>
+<status status="PASS" starttime="20200727 07:43:55.400" endtime="20200727 07:44:09.563"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:city</arg>
+<arg>Chirala</arg>
+</arguments>
+<msg timestamp="20200727 07:44:09.565" level="INFO">Selecting options from selection list 'name:city' by label Chirala.</msg>
+<status status="PASS" starttime="20200727 07:44:09.564" endtime="20200727 07:44:23.758"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>name:terms</arg>
+</arguments>
+<msg timestamp="20200727 07:44:23.760" level="INFO">Selecting checkbox 'name:terms'.</msg>
+<status status="PASS" starttime="20200727 07:44:23.759" endtime="20200727 07:44:37.946"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()='Read Detail']</arg>
+</arguments>
+<msg timestamp="20200727 07:44:37.947" level="INFO">Clicking link 'xpath://a[text()='Read Detail']'.</msg>
+<status status="PASS" starttime="20200727 07:44:37.947" endtime="20200727 07:44:44.097"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:42:59.957" endtime="20200727 07:44:44.098" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:42:59.949" endtime="20200727 07:44:44.100"></status>
+</suite>
+<suite id="s1-s1-s5" name="TC 001 Withreturnvalue" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_001_Withreturnvalue.robot">
+<test id="s1-s1-s5-t1" name="With Return Value">
+<kw name="Start Browser">
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<assign>
+<var>${Res}=</var>
+</assign>
+<msg timestamp="20200727 07:44:44.123" level="FAIL">No keyword with name 'Start Browser' found.</msg>
+<status status="FAIL" starttime="20200727 07:44:44.123" endtime="20200727 07:44:44.123"></status>
+</kw>
+<doc>This testcases illustrates return value</doc>
+<status status="FAIL" starttime="20200727 07:44:44.114" endtime="20200727 07:44:44.124" critical="yes">No keyword with name 'Start Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20200727 07:44:44.103" endtime="20200727 07:44:44.126"></status>
+</suite>
+<suite id="s1-s1-s6" name="TC 00 ReadingJson" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_00_ReadingJson.robot">
+<test id="s1-s1-s6-t1" name="Robot Json Page Reading">
+<kw name="Read Element locator">
+<arguments>
+<arg>Registration.username_textbox_name</arg>
+</arguments>
+<assign>
+<var>${username}</var>
+</assign>
+<kw name="read_locator_json">
+<arguments>
+<arg>${JsonPath}</arg>
+</arguments>
+<assign>
+<var>${result} =</var>
+</assign>
+<msg timestamp="20200727 07:44:44.152" level="FAIL">No keyword with name 'read_locator_json' found.</msg>
+<status status="FAIL" starttime="20200727 07:44:44.152" endtime="20200727 07:44:44.152"></status>
+</kw>
+<status status="FAIL" starttime="20200727 07:44:44.144" endtime="20200727 07:44:44.153"></status>
+</kw>
+<status status="FAIL" starttime="20200727 07:44:44.143" endtime="20200727 07:44:44.153" critical="yes">No keyword with name 'read_locator_json' found.</status>
+</test>
+<status status="FAIL" starttime="20200727 07:44:44.129" endtime="20200727 07:44:44.156"></status>
+</suite>
+<suite id="s1-s1-s7" name="001 Keyworddefined" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC__001_Keyworddefined.robot">
+<test id="s1-s1-s7-t1" name="Robot Registration Page Input">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200727 07:44:44.168" level="INFO">Opening browser 'Chrome' to base url 'http://thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20200727 07:44:44.167" endtime="20200727 07:44:53.483"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200727 07:44:53.486" endtime="20200727 07:44:57.638"></status>
+</kw>
+<kw name="Enter username and password">
+<arguments>
+<arg>HelloSubhashini</arg>
+<arg>subhashini17@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200727 07:44:57.639" level="INFO">Typing text 'HelloSubhashini' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20200727 07:44:57.639" endtime="20200727 07:45:03.880"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@name='fld_email']</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20200727 07:45:03.880" level="INFO">Typing text 'subhashini17@gmail.com' into text field 'xpath://input[@name='fld_email']'.</msg>
+<status status="PASS" starttime="20200727 07:45:03.880" endtime="20200727 07:45:10.164"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:44:57.638" endtime="20200727 07:45:10.164"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:44:44.166" endtime="20200727 07:45:10.165" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:44:44.160" endtime="20200727 07:45:10.167"></status>
+</suite>
+<status status="FAIL" starttime="20200727 07:42:17.326" endtime="20200727 07:45:10.172"></status>
+</suite>
+<suite id="s1-s2" name="Fetch Data" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Fetch Data">
+<suite id="s1-s2-s1" name="TC 002 FetchData" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Fetch Data\TC_002_FetchData.robot">
+<test id="s1-s2-s1-t1" name="Robot First test case">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200727 07:45:10.192" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20200727 07:45:10.191" endtime="20200727 07:45:23.102"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200727 07:45:23.103" endtime="20200727 07:45:27.260"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${PageTitle}</var>
+</assign>
+<msg timestamp="20200727 07:45:29.271" level="INFO">${PageTitle} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20200727 07:45:27.262" endtime="20200727 07:45:29.271"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${PageTitle}</arg>
+</arguments>
+<msg timestamp="20200727 07:45:29.272" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20200727 07:45:29.272" endtime="20200727 07:45:29.273"></status>
+</kw>
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<assign>
+<var>${Speed}</var>
+</assign>
+<msg timestamp="20200727 07:45:29.274" level="INFO">${Speed} = 2 seconds</msg>
+<status status="PASS" starttime="20200727 07:45:29.273" endtime="20200727 07:45:29.274"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Speed}</arg>
+</arguments>
+<msg timestamp="20200727 07:45:29.275" level="INFO">2 seconds</msg>
+<status status="PASS" starttime="20200727 07:45:29.274" endtime="20200727 07:45:29.275"></status>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='submit']</arg>
+</arguments>
+<assign>
+<var>${Value}</var>
+</assign>
+<msg timestamp="20200727 07:45:33.318" level="INFO">${Value} = Sign up</msg>
+<status status="PASS" starttime="20200727 07:45:29.275" endtime="20200727 07:45:33.318"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Value}</arg>
+</arguments>
+<msg timestamp="20200727 07:45:33.320" level="INFO">Sign up</msg>
+<status status="PASS" starttime="20200727 07:45:33.319" endtime="20200727 07:45:33.320"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:45:10.190" endtime="20200727 07:45:33.320" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:45:10.184" endtime="20200727 07:45:33.322"></status>
+</suite>
+<suite id="s1-s2-s2" name="TC 003 Select List" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Fetch Data\TC_003_Select_List.robot">
+<test id="s1-s2-s2-t1" name="Robot First test case">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200727 07:45:33.333" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20200727 07:45:33.333" endtime="20200727 07:45:41.376"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:sex</arg>
+<arg>Female</arg>
+</arguments>
+<msg timestamp="20200727 07:45:41.377" level="INFO">Selecting options from selection list 'name:sex' by label Female.</msg>
+<status status="PASS" starttime="20200727 07:45:41.376" endtime="20200727 07:45:55.492"></status>
+</kw>
+<kw name="Get Selected List Label" library="SeleniumLibrary">
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<arguments>
+<arg>name:sex</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20200727 07:46:13.621" level="INFO">${Text} = Female</msg>
+<status status="PASS" starttime="20200727 07:45:55.492" endtime="20200727 07:46:13.621"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Text}</arg>
+</arguments>
+<msg timestamp="20200727 07:46:13.622" level="INFO">Female</msg>
+<status status="PASS" starttime="20200727 07:46:13.622" endtime="20200727 07:46:13.622"></status>
+</kw>
+<kw name="Get List Items" library="SeleniumLibrary">
+<doc>Returns all labels or values of selection list ``locator``.</doc>
+<arguments>
+<arg>name:sex</arg>
+</arguments>
+<assign>
+<var>${Alllabels}</var>
+</assign>
+<msg timestamp="20200727 07:46:29.714" level="INFO">${Alllabels} = ['Choose Gender', 'Male', 'Female']</msg>
+<status status="PASS" starttime="20200727 07:46:13.622" endtime="20200727 07:46:29.714"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Alllabels}</arg>
+</arguments>
+<msg timestamp="20200727 07:46:29.717" level="INFO">['Choose Gender', 'Male', 'Female']</msg>
+<status status="PASS" starttime="20200727 07:46:29.716" endtime="20200727 07:46:29.718"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:45:33.332" endtime="20200727 07:46:29.719" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:45:33.327" endtime="20200727 07:46:29.721"></status>
+</suite>
+<suite id="s1-s2-s3" name="TC 004 getvalues" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Fetch Data\TC_004_getvalues.robot">
+<test id="s1-s2-s3-t1" name="Robot First test case">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200727 07:46:29.744" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20200727 07:46:29.743" endtime="20200727 07:46:39.423"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${Location}</var>
+</assign>
+<msg timestamp="20200727 07:46:41.433" level="INFO">${Location} = https://www.thetestingworld.com/testings/</msg>
+<status status="PASS" starttime="20200727 07:46:39.424" endtime="20200727 07:46:41.433"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Location}</arg>
+</arguments>
+<msg timestamp="20200727 07:46:41.434" level="INFO">https://www.thetestingworld.com/testings/</msg>
+<status status="PASS" starttime="20200727 07:46:41.433" endtime="20200727 07:46:41.434"></status>
+</kw>
+<kw name="Get Source" library="SeleniumLibrary">
+<doc>Returns the entire HTML source of the current page or frame.</doc>
+<assign>
+<var>${pagehtml}</var>
+</assign>
+<msg timestamp="20200727 07:46:43.449" level="INFO">${pagehtml} = &lt;html lang="en" class="no-js"&gt;&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt; 
+    &lt;meta name="viewport" content="width=device-width, initial-scale...</msg>
+<status status="PASS" starttime="20200727 07:46:41.434" endtime="20200727 07:46:43.449"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${pagehtml}</arg>
+</arguments>
+<msg timestamp="20200727 07:46:43.450" level="INFO">&lt;html lang="en" class="no-js"&gt;&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt; 
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+    &lt;title&gt; Login &amp;amp; Sign Up Forms&lt;/title&gt;
+    &lt;meta name="author" content="Reverie Tech"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/demo.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="tabs.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;style&gt;
+#overlay {
+ display:none; /*hidden on pageload*/
+ position:fixed; /*this will disable it from scrolling*/
+ width:100%; /*this will give the full width*/
+ height:100%; /*this will give the full height*/
+ z-index:999; /*this will keep it above all elements in the page*/
+ left:0; /*this will align it to the left*/
+ top:0; /*this will align it to the top*/
+ background:#000; /*this will give it a black background*/
+}
+
+.popup {
+ display:none; /*hidden on pageload*/
+ width:50%; /*width of popup*/
+ height:400px;  /*height of popup*/
+ padding:10px; /*padding for popup*/
+ background:#fff; /*background of popup*/
+ border:5px solid #ccc; /*border of popup*/
+ position:fixed; /*this will keep it relative to the body*/
+ z-index:9999; /*this will keep it above the overlay*/
+ top:10%; /*keep popup in center*/
+ left:25%; /*keep popup in center*/
+ color:#000000;
+
+}
+.popup .close { /* close link*/
+ float:right;
+ color:#000;
+ text-decoration:none;/*remove underline from the close link*/
+}
+.popup p { /*popup text*/
+ padding:10px 0; color:#333333; font-size:18px;
+}
+&lt;/style&gt;
+
+&lt;div id="overlay"&gt;&lt;/div&gt;
+
+&lt;div class="popup" id="popup1"&gt;
+&lt;a href="#" class="close"&gt;X&lt;/a&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;h2&gt;Terms and Conditions&lt;/h2&gt;&lt;br&gt;
+&lt;br&gt;
+
+It’s up to you to set the rules and guidelines that the user must agree to. You can think of your Terms and Conditions agreement as the legal agreement where you maintain your rights to exclude users from your app in the event that they abuse your app, and where you maintain your legal rights against potential app abusers, and so on.&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Terms and Conditions are also known as Terms of Service or Terms of Use.&lt;br&gt;
+&lt;br&gt;
+
+This type of legal agreement can be used for both your website and your mobile app. It’s not required (it’s not recommended actually) to have separate Terms and Conditions agreements: one for your website and one for your mobile app.
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+
+&lt;header&gt;
+	&lt;h1&gt;&lt;img src="images/logo.png" style=" width:400px;"&gt;&lt;span&gt;Login or Sign Up to start&lt;/span&gt; &lt;hr&gt;&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;div class="container"&gt;
+&lt;!--    &lt;div class="democolors"&gt;
+        &lt;a class="blue" href="index.html"&gt;blue&lt;/a&gt;
+        &lt;a class="red" href="red.html"&gt;red&lt;/a&gt;
+        &lt;a class="purple" href="purple.html"&gt;purple&lt;/a&gt;
+    &lt;/div&gt;--&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.left{ float:left; width:30%; text-align:center;}
+.right{ float:right; width:30%; text-align:center;}
+.center{ float:left; width:40%;}
+
+@media only screen and (max-width: 767px) {
+ .left{ float:left; width:100%; text-align:center;}
+.right{ float:right; width:100%; text-align:center;     padding-top: 44px;}
+.center{ float:left; width:100%; text-align:center;}
+
+.left img, .right img{ width:100%;}
+
+}
+
+&lt;/style&gt;
+
+&lt;div class="container" style="width:90%;"&gt;
+	 &lt;div class="left"&gt;
+	      &lt;a href="https://www.facebook.com/groups/544751452789975/?ref=nf_target&amp;amp;hc_ref=ARRQok9xzqfP1d7meEreC9agoaQ0ynqSiSrLES8iLlI9YvkMZ2Lmp17YV6nnxlQ8vtY&amp;amp;fref=gs&amp;amp;dti=544751452789975&amp;amp;hc_location=group" target="_blank"&gt;
+     &lt;img src="banner/5e13707d13ced.jpg"&gt;
+	 
+	      &lt;/a&gt;&lt;a href="https://www.facebook.com/groups/461729974772386/?ref=nf_target&amp;amp;hc_ref=ARSCrv_mrMgSSDWqT4b8kx3RpnWSI6K9uEhVNH-HHMESWvrSmtpqCg2IXKIcVMNXau8&amp;amp;fref=gs&amp;amp;dti=461729974772386&amp;amp;hc_location=group" target="_blank"&gt;
+     &lt;img src="banner/5e13707d13dbc.jpg"&gt;
+	 
+	      &lt;/a&gt;&lt;a href="https://www.youtube.com/channel/UCsdoSHH5bucBf_wwtvWJfnQ/playlists" target="_blank"&gt;
+     &lt;img src="banner/5e13707d13e74.jpg"&gt;
+	 
+	      &lt;/a&gt;&lt;a href="" target="_blank"&gt;
+     &lt;img src="banner/5c33a68c8a087.jpg"&gt;
+	 
+	      &lt;/a&gt;
+     &lt;/div&gt;
+    &lt;section class="tabblue center"&gt;
+		&lt;ul class="tabs blue"&gt;
+          &lt;li&gt;
+            &lt;input type="radio" name="tabs blue" id="tab1" checked=""&gt;
+            &lt;label for="tab1"&gt;Register&lt;/label&gt;
+            &lt;div id="tab-content1" class="tab-content"&gt;
+              &lt;p&gt;Register now and kick start your career as a Software Testing Pro!&lt;/p&gt;
+              
+             
+
+                                       
+                   
+                  
+                    
+                  
+                    
+               &lt;br&gt;
+              &lt;form method="post" name="register" action="#"&gt;
+              &lt;input name="_hiddenTXT" type="hidden" value="1"&gt;
+              
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-user fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_username" required="" type="text" placeholder="myusername" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-envelope fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_email" required="" type="email" placeholder="myusername@gmail.com" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-lock fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_password" required="" type="password" placeholder="Password" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-lock fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="fld_cpassword" required="" type="password" placeholder="Confirm password" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-calendar-o fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input type="text" id="datepicker" name="dob" placeholder="Date of birth" value="" class="hasDatepicker"&gt;
+                
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-phone fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input type="text" placeholder="Phone" name="phone" value=""&gt;
+                
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-map fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input type="text" placeholder="Address" name="address" value=""&gt;
+                
+                Address type : &lt;input style="position:inherit;" name="add_type" type="radio" value="home"&gt;Home 
+                &lt;input style="position:inherit;" name="add_type" type="radio" value="office"&gt;Office
+                
+                &lt;select name="sex" required=""&gt;
+                  &lt;option value=""&gt;Choose Gender&lt;/option&gt;
+                  &lt;option value="1"&gt;Male&lt;/option&gt;
+                  &lt;option value="2"&gt;Female&lt;/option&gt;
+                &lt;/select&gt;
+
+                
+&lt;select name="country" class="last countries " id="countryId"&gt;
+    &lt;option value=""&gt;Select Country&lt;/option&gt;
+&lt;option value="1"&gt;Afghanistan&lt;/option&gt;&lt;option value="2"&gt;Albania&lt;/option&gt;&lt;option value="3"&gt;Algeria&lt;/option&gt;&lt;option value="4"&gt;American Samoa&lt;/option&gt;&lt;option value="5"&gt;Andorra&lt;/option&gt;&lt;option value="6"&gt;Angola&lt;/option&gt;&lt;option value="7"&gt;Anguilla&lt;/option&gt;&lt;option value="8"&gt;Antarctica&lt;/option&gt;&lt;option value="9"&gt;Antigua And Barbuda&lt;/option&gt;&lt;option value="10"&gt;Argentina&lt;/option&gt;&lt;option value="11"&gt;Armenia&lt;/option&gt;&lt;option value="12"&gt;Aruba&lt;/option&gt;&lt;option value="13"&gt;Australia&lt;/option&gt;&lt;option value="14"&gt;Austria&lt;/option&gt;&lt;option value="15"&gt;Azerbaijan&lt;/option&gt;&lt;option value="16"&gt;Bahamas The&lt;/option&gt;&lt;option value="17"&gt;Bahrain&lt;/option&gt;&lt;option value="18"&gt;Bangladesh&lt;/option&gt;&lt;option value="19"&gt;Barbados&lt;/option&gt;&lt;option value="20"&gt;Belarus&lt;/option&gt;&lt;option value="21"&gt;Belgium&lt;/option&gt;&lt;option value="22"&gt;Belize&lt;/option&gt;&lt;option value="23"&gt;Benin&lt;/option&gt;&lt;option value="24"&gt;Bermuda&lt;/option&gt;&lt;option value="25"&gt;Bhutan&lt;/option&gt;&lt;option value="26"&gt;Bolivia&lt;/option&gt;&lt;option value="27"&gt;Bosnia and Herzegovina&lt;/option&gt;&lt;option value="28"&gt;Botswana&lt;/option&gt;&lt;option value="29"&gt;Bouvet Island&lt;/option&gt;&lt;option value="30"&gt;Brazil&lt;/option&gt;&lt;option value="31"&gt;British Indian Ocean Territory&lt;/option&gt;&lt;option value="32"&gt;Brunei&lt;/option&gt;&lt;option value="33"&gt;Bulgaria&lt;/option&gt;&lt;option value="34"&gt;Burkina Faso&lt;/option&gt;&lt;option value="35"&gt;Burundi&lt;/option&gt;&lt;option value="36"&gt;Cambodia&lt;/option&gt;&lt;option value="37"&gt;Cameroon&lt;/option&gt;&lt;option value="38"&gt;Canada&lt;/option&gt;&lt;option value="39"&gt;Cape Verde&lt;/option&gt;&lt;option value="40"&gt;Cayman Islands&lt;/option&gt;&lt;option value="41"&gt;Central African Republic&lt;/option&gt;&lt;option value="42"&gt;Chad&lt;/option&gt;&lt;option value="43"&gt;Chile&lt;/option&gt;&lt;option value="44"&gt;China&lt;/option&gt;&lt;option value="45"&gt;Christmas Island&lt;/option&gt;&lt;option value="46"&gt;Cocos (Keeling) Islands&lt;/option&gt;&lt;option value="47"&gt;Colombia&lt;/option&gt;&lt;option value="48"&gt;Comoros&lt;/option&gt;&lt;option value="49"&gt;Congo&lt;/option&gt;&lt;option value="50"&gt;Congo The Democratic Republic Of The&lt;/option&gt;&lt;option value="51"&gt;Cook Islands&lt;/option&gt;&lt;option value="52"&gt;Costa Rica&lt;/option&gt;&lt;option value="53"&gt;Cote D'Ivoire (Ivory Coast)&lt;/option&gt;&lt;option value="54"&gt;Croatia (Hrvatska)&lt;/option&gt;&lt;option value="55"&gt;Cuba&lt;/option&gt;&lt;option value="56"&gt;Cyprus&lt;/option&gt;&lt;option value="57"&gt;Czech Republic&lt;/option&gt;&lt;option value="58"&gt;Denmark&lt;/option&gt;&lt;option value="59"&gt;Djibouti&lt;/option&gt;&lt;option value="60"&gt;Dominica&lt;/option&gt;&lt;option value="61"&gt;Dominican Republic&lt;/option&gt;&lt;option value="62"&gt;East Timor&lt;/option&gt;&lt;option value="63"&gt;Ecuador&lt;/option&gt;&lt;option value="64"&gt;Egypt&lt;/option&gt;&lt;option value="65"&gt;El Salvador&lt;/option&gt;&lt;option value="66"&gt;Equatorial Guinea&lt;/option&gt;&lt;option value="67"&gt;Eritrea&lt;/option&gt;&lt;option value="68"&gt;Estonia&lt;/option&gt;&lt;option value="69"&gt;Ethiopia&lt;/option&gt;&lt;option value="70"&gt;External Territories of Australia&lt;/option&gt;&lt;option value="71"&gt;Falkland Islands&lt;/option&gt;&lt;option value="72"&gt;Faroe Islands&lt;/option&gt;&lt;option value="73"&gt;Fiji Islands&lt;/option&gt;&lt;option value="74"&gt;Finland&lt;/option&gt;&lt;option value="75"&gt;France&lt;/option&gt;&lt;option value="76"&gt;French Guiana&lt;/option&gt;&lt;option value="77"&gt;French Polynesia&lt;/option&gt;&lt;option value="78"&gt;French Southern Territories&lt;/option&gt;&lt;option value="79"&gt;Gabon&lt;/option&gt;&lt;option value="80"&gt;Gambia The&lt;/option&gt;&lt;option value="81"&gt;Georgia&lt;/option&gt;&lt;option value="82"&gt;Germany&lt;/option&gt;&lt;option value="83"&gt;Ghana&lt;/option&gt;&lt;option value="84"&gt;Gibraltar&lt;/option&gt;&lt;option value="85"&gt;Greece&lt;/option&gt;&lt;option value="86"&gt;Greenland&lt;/option&gt;&lt;option value="87"&gt;Grenada&lt;/option&gt;&lt;option value="88"&gt;Guadeloupe&lt;/option&gt;&lt;option value="89"&gt;Guam&lt;/option&gt;&lt;option value="90"&gt;Guatemala&lt;/option&gt;&lt;option value="91"&gt;Guernsey and Alderney&lt;/option&gt;&lt;option value="92"&gt;Guinea&lt;/option&gt;&lt;option value="93"&gt;Guinea-Bissau&lt;/option&gt;&lt;option value="94"&gt;Guyana&lt;/option&gt;&lt;option value="95"&gt;Haiti&lt;/option&gt;&lt;option value="96"&gt;Heard and McDonald Islands&lt;/option&gt;&lt;option value="97"&gt;Honduras&lt;/option&gt;&lt;option value="98"&gt;Hong Kong S.A.R.&lt;/option&gt;&lt;option value="99"&gt;Hungary&lt;/option&gt;&lt;option value="100"&gt;Iceland&lt;/option&gt;&lt;option value="101"&gt;India&lt;/option&gt;&lt;option value="102"&gt;Indonesia&lt;/option&gt;&lt;option value="103"&gt;Iran&lt;/option&gt;&lt;option value="104"&gt;Iraq&lt;/option&gt;&lt;option value="105"&gt;Ireland&lt;/option&gt;&lt;option value="106"&gt;Israel&lt;/option&gt;&lt;option value="107"&gt;Italy&lt;/option&gt;&lt;option value="108"&gt;Jamaica&lt;/option&gt;&lt;option value="109"&gt;Japan&lt;/option&gt;&lt;option value="110"&gt;Jersey&lt;/option&gt;&lt;option value="111"&gt;Jordan&lt;/option&gt;&lt;option value="112"&gt;Kazakhstan&lt;/option&gt;&lt;option value="113"&gt;Kenya&lt;/option&gt;&lt;option value="114"&gt;Kiribati&lt;/option&gt;&lt;option value="115"&gt;Korea North&lt;/option&gt;&lt;option value="116"&gt;Korea South&lt;/option&gt;&lt;option value="117"&gt;Kuwait&lt;/option&gt;&lt;option value="118"&gt;Kyrgyzstan&lt;/option&gt;&lt;option value="119"&gt;Laos&lt;/option&gt;&lt;option value="120"&gt;Latvia&lt;/option&gt;&lt;option value="121"&gt;Lebanon&lt;/option&gt;&lt;option value="122"&gt;Lesotho&lt;/option&gt;&lt;option value="123"&gt;Liberia&lt;/option&gt;&lt;option value="124"&gt;Libya&lt;/option&gt;&lt;option value="125"&gt;Liechtenstein&lt;/option&gt;&lt;option value="126"&gt;Lithuania&lt;/option&gt;&lt;option value="127"&gt;Luxembourg&lt;/option&gt;&lt;option value="128"&gt;Macau S.A.R.&lt;/option&gt;&lt;option value="129"&gt;Macedonia&lt;/option&gt;&lt;option value="130"&gt;Madagascar&lt;/option&gt;&lt;option value="131"&gt;Malawi&lt;/option&gt;&lt;option value="132"&gt;Malaysia&lt;/option&gt;&lt;option value="133"&gt;Maldives&lt;/option&gt;&lt;option value="134"&gt;Mali&lt;/option&gt;&lt;option value="135"&gt;Malta&lt;/option&gt;&lt;option value="136"&gt;Man (Isle of)&lt;/option&gt;&lt;option value="137"&gt;Marshall Islands&lt;/option&gt;&lt;option value="138"&gt;Martinique&lt;/option&gt;&lt;option value="139"&gt;Mauritania&lt;/option&gt;&lt;option value="140"&gt;Mauritius&lt;/option&gt;&lt;option value="141"&gt;Mayotte&lt;/option&gt;&lt;option value="142"&gt;Mexico&lt;/option&gt;&lt;option value="143"&gt;Micronesia&lt;/option&gt;&lt;option value="144"&gt;Moldova&lt;/option&gt;&lt;option value="145"&gt;Monaco&lt;/option&gt;&lt;option value="146"&gt;Mongolia&lt;/option&gt;&lt;option value="147"&gt;Montserrat&lt;/option&gt;&lt;option value="148"&gt;Morocco&lt;/option&gt;&lt;option value="149"&gt;Mozambique&lt;/option&gt;&lt;option value="150"&gt;Myanmar&lt;/option&gt;&lt;option value="151"&gt;Namibia&lt;/option&gt;&lt;option value="152"&gt;Nauru&lt;/option&gt;&lt;option value="153"&gt;Nepal&lt;/option&gt;&lt;option value="154"&gt;Netherlands Antilles&lt;/option&gt;&lt;option value="155"&gt;Netherlands The&lt;/option&gt;&lt;option value="156"&gt;New Caledonia&lt;/option&gt;&lt;option value="157"&gt;New Zealand&lt;/option&gt;&lt;option value="158"&gt;Nicaragua&lt;/option&gt;&lt;option value="159"&gt;Niger&lt;/option&gt;&lt;option value="160"&gt;Nigeria&lt;/option&gt;&lt;option value="161"&gt;Niue&lt;/option&gt;&lt;option value="162"&gt;Norfolk Island&lt;/option&gt;&lt;option value="163"&gt;Northern Mariana Islands&lt;/option&gt;&lt;option value="164"&gt;Norway&lt;/option&gt;&lt;option value="165"&gt;Oman&lt;/option&gt;&lt;option value="166"&gt;Pakistan&lt;/option&gt;&lt;option value="167"&gt;Palau&lt;/option&gt;&lt;option value="168"&gt;Palestinian Territory Occupied&lt;/option&gt;&lt;option value="169"&gt;Panama&lt;/option&gt;&lt;option value="170"&gt;Papua new Guinea&lt;/option&gt;&lt;option value="171"&gt;Paraguay&lt;/option&gt;&lt;option value="172"&gt;Peru&lt;/option&gt;&lt;option value="173"&gt;Philippines&lt;/option&gt;&lt;option value="174"&gt;Pitcairn Island&lt;/option&gt;&lt;option value="175"&gt;Poland&lt;/option&gt;&lt;option value="176"&gt;Portugal&lt;/option&gt;&lt;option value="177"&gt;Puerto Rico&lt;/option&gt;&lt;option value="178"&gt;Qatar&lt;/option&gt;&lt;option value="179"&gt;Reunion&lt;/option&gt;&lt;option value="180"&gt;Romania&lt;/option&gt;&lt;option value="181"&gt;Russia&lt;/option&gt;&lt;option value="182"&gt;Rwanda&lt;/option&gt;&lt;option value="183"&gt;Saint Helena&lt;/option&gt;&lt;option value="184"&gt;Saint Kitts And Nevis&lt;/option&gt;&lt;option value="185"&gt;Saint Lucia&lt;/option&gt;&lt;option value="186"&gt;Saint Pierre and Miquelon&lt;/option&gt;&lt;option value="187"&gt;Saint Vincent And The Grenadines&lt;/option&gt;&lt;option value="188"&gt;Samoa&lt;/option&gt;&lt;option value="189"&gt;San Marino&lt;/option&gt;&lt;option value="190"&gt;Sao Tome and Principe&lt;/option&gt;&lt;option value="191"&gt;Saudi Arabia&lt;/option&gt;&lt;option value="192"&gt;Senegal&lt;/option&gt;&lt;option value="193"&gt;Serbia&lt;/option&gt;&lt;option value="194"&gt;Seychelles&lt;/option&gt;&lt;option value="195"&gt;Sierra Leone&lt;/option&gt;&lt;option value="196"&gt;Singapore&lt;/option&gt;&lt;option value="197"&gt;Slovakia&lt;/option&gt;&lt;option value="198"&gt;Slovenia&lt;/option&gt;&lt;option value="199"&gt;Smaller Territories of the UK&lt;/option&gt;&lt;option value="200"&gt;Solomon Islands&lt;/option&gt;&lt;option value="201"&gt;Somalia&lt;/option&gt;&lt;option value="202"&gt;South Africa&lt;/option&gt;&lt;option value="203"&gt;South Georgia&lt;/option&gt;&lt;option value="204"&gt;South Sudan&lt;/option&gt;&lt;option value="205"&gt;Spain&lt;/option&gt;&lt;option value="206"&gt;Sri Lanka&lt;/option&gt;&lt;option value="207"&gt;Sudan&lt;/option&gt;&lt;option value="208"&gt;Suriname&lt;/option&gt;&lt;option value="209"&gt;Svalbard And Jan Mayen Islands&lt;/option&gt;&lt;option value="210"&gt;Swaziland&lt;/option&gt;&lt;option value="211"&gt;Sweden&lt;/option&gt;&lt;option value="212"&gt;Switzerland&lt;/option&gt;&lt;option value="213"&gt;Syria&lt;/option&gt;&lt;option value="214"&gt;Taiwan&lt;/option&gt;&lt;option value="215"&gt;Tajikistan&lt;/option&gt;&lt;option value="216"&gt;Tanzania&lt;/option&gt;&lt;option value="217"&gt;Thailand&lt;/option&gt;&lt;option value="218"&gt;Togo&lt;/option&gt;&lt;option value="219"&gt;Tokelau&lt;/option&gt;&lt;option value="220"&gt;Tonga&lt;/option&gt;&lt;option value="221"&gt;Trinidad And Tobago&lt;/option&gt;&lt;option value="222"&gt;Tunisia&lt;/option&gt;&lt;option value="223"&gt;Turkey&lt;/option&gt;&lt;option value="224"&gt;Turkmenistan&lt;/option&gt;&lt;option value="225"&gt;Turks And Caicos Islands&lt;/option&gt;&lt;option value="226"&gt;Tuvalu&lt;/option&gt;&lt;option value="227"&gt;Uganda&lt;/option&gt;&lt;option value="228"&gt;Ukraine&lt;/option&gt;&lt;option value="229"&gt;United Arab Emirates&lt;/option&gt;&lt;option value="230"&gt;United Kingdom&lt;/option&gt;&lt;option value="231"&gt;United States&lt;/option&gt;&lt;option value="232"&gt;United States Minor Outlying Islands&lt;/option&gt;&lt;option value="233"&gt;Uruguay&lt;/option&gt;&lt;option value="234"&gt;Uzbekistan&lt;/option&gt;&lt;option value="235"&gt;Vanuatu&lt;/option&gt;&lt;option value="236"&gt;Vatican City State (Holy See)&lt;/option&gt;&lt;option value="237"&gt;Venezuela&lt;/option&gt;&lt;option value="238"&gt;Vietnam&lt;/option&gt;&lt;option value="239"&gt;Virgin Islands (British)&lt;/option&gt;&lt;option value="240"&gt;Virgin Islands (US)&lt;/option&gt;&lt;option value="241"&gt;Wallis And Futuna Islands&lt;/option&gt;&lt;option value="242"&gt;Western Sahara&lt;/option&gt;&lt;option value="243"&gt;Yemen&lt;/option&gt;&lt;option value="244"&gt;Yugoslavia&lt;/option&gt;&lt;option value="245"&gt;Zambia&lt;/option&gt;&lt;option value="246"&gt;Zimbabwe&lt;/option&gt;&lt;/select&gt;
+&lt;select name="state" class="states" id="stateId"&gt;
+     &lt;option value=""&gt;Select State&lt;/option&gt;
+&lt;/select&gt;
+&lt;select name="city" class="last cities" id="cityId"&gt;
+   &lt;option value=""&gt;Select City&lt;/option&gt;
+&lt;/select&gt;
+
+ &lt;span class="tabaddon"&gt;&lt;i class="fa fa-map fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+ &lt;input type="text" placeholder="Zip code" name="zip"&gt;     
+                
+                &lt;div class="btn"&gt;
+                  &lt;input type="checkbox" name="terms" required=""&gt;
+                  &lt;em&gt;I agree with terms and conditions &lt;a href="#" style=" color:#fff;font-size: 21px;" class="displayPopup"&gt;Read Detail&lt;/a&gt; &lt;/em&gt;
+                  &lt;input type="submit" value="Sign up"&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+      	  &lt;li&gt;
+            &lt;input type="radio" name="tabs blue" id="tab2"&gt;
+            &lt;label for="tab2"&gt;Login&lt;/label&gt;
+            &lt;div id="tab-content2" class="tab-content"&gt;
+              &lt;form method="post" name="register" action=""&gt;
+               &lt;input name="_hidCheckSubmit" type="hidden" value="2"&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-envelope fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="_txtUserName" required="" type="text" placeholder="Username" value=""&gt;
+                &lt;span class="tabaddon"&gt;&lt;i class="fa fa-lock fa-2x"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;input class="field" name="_txtPassword" required="" type="password" placeholder="mypassword" value=""&gt;
+                &lt;div class="btn"&gt;
+                  &lt;input type="checkbox" name="terms"&gt;
+                  &lt;em&gt;Keep me logged in &lt;/em&gt;
+                  &lt;input type="submit" value="Login"&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/li&gt;
+          	
+          
+          
+          
+          
+        
+	&lt;/ul&gt;
+	&lt;/section&gt;
+    
+  &lt;div class="right"&gt;
+    &lt;a href="https://www.facebook.com/groups/783962918750154/?ref=nf_target&amp;amp;hc_ref=ARR6qUmC-DmuFkVX7GgH6G_xFhu2I7e5u6Xq3ewBt8BIQt6dphT7D9dWHLL_TbDOoLw&amp;amp;fref=gs&amp;amp;dti=783962918750154&amp;amp;hc_location=group" target="_blank"&gt;
+  &lt;img src="banner/5e13707d13f26.jpg"&gt;
+    &lt;/a&gt;&lt;a href="" target="_blank"&gt;
+  &lt;img src="banner/5c33a332785bb.jpg"&gt;
+    &lt;/a&gt;&lt;a href="https://api.whatsapp.com/send?phone=918743913121&amp;amp;text=Hello,%20i%20am%20interested%20to%20purchase%20video%20course" target="_blank"&gt;
+  &lt;img src="banner/5e13707d13fe4.jpg"&gt;
+    &lt;/a&gt;&lt;a href="https://www.google.com/search?client=firefox-b-ab&amp;amp;q=testing+world#lrd=0x390ce45bd130c3e3:0x2cbebc3a19808103,1,,," target="_blank"&gt;
+  &lt;img src="banner/5c33a68c8a29f.jpg"&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+    
+    
+&lt;/div&gt;
+
+  &lt;footer&gt;
+	&lt;p&gt;Login &amp;amp; Sign Up &lt;/p&gt;
+
+&lt;/footer&gt; 
+
+&lt;style&gt;
+select[disabled]{
+  color:#aaa;
+}
+&lt;/style&gt;
+
+
+
+
+
+ &lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"&gt;
+  &lt;script src="https://code.jquery.com/jquery-1.12.4.js"&gt;&lt;/script&gt;
+  &lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  &lt;/script&gt;
+  
+  
+  &lt;script src="js/location.js"&gt;&lt;/script&gt;  
+  
+  
+  &lt;script&gt;
+  $(function() { //document ready
+    $(".displayPopup").on("click", function() { //click event of the button
+        $("#overlay").fadeTo(100, .3); //this will show the overlay awith a crossbrowser transparency
+        $("#popup1").show(); // show popup1
+        return false; //disable event propogation (avoid addition of "#" to url)
+    })
+ 
+    $(".popup .close").on("click", function() { //click event of the close button in popup
+        $("#overlay").hide(); //hide overlay
+        $(".popup").hide(); //hide popup
+        return false; //disable event propogation (avoid addition of "#" to url)
+    })
+})
+  &lt;/script&gt;
+  
+
+
+
+
+&lt;div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</msg>
+<status status="PASS" starttime="20200727 07:46:43.450" endtime="20200727 07:46:43.451"></status>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>class</arg>
+</arguments>
+<assign>
+<var>${attr}</var>
+</assign>
+<msg timestamp="20200727 07:46:47.479" level="INFO">${attr} = field</msg>
+<status status="PASS" starttime="20200727 07:46:43.452" endtime="20200727 07:46:47.479"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${attr}</arg>
+</arguments>
+<msg timestamp="20200727 07:46:47.480" level="INFO">field</msg>
+<status status="PASS" starttime="20200727 07:46:47.480" endtime="20200727 07:46:47.480"></status>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>class:field</arg>
+</arguments>
+<assign>
+<var>${count}</var>
+</assign>
+<msg timestamp="20200727 07:46:49.499" level="INFO">${count} = 6</msg>
+<status status="PASS" starttime="20200727 07:46:47.481" endtime="20200727 07:46:49.499"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${count}</arg>
+</arguments>
+<msg timestamp="20200727 07:46:49.500" level="INFO">6</msg>
+<status status="PASS" starttime="20200727 07:46:49.500" endtime="20200727 07:46:49.500"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200727 07:46:49.501" endtime="20200727 07:46:53.600"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:46:29.741" endtime="20200727 07:46:53.601" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:46:29.727" endtime="20200727 07:46:53.603"></status>
+</suite>
+<status status="PASS" starttime="20200727 07:45:10.177" endtime="20200727 07:46:53.609"></status>
+</suite>
+<suite id="s1-s3" name="ReturningArgs" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\ReturningArgs">
+<suite id="s1-s3-s1" name="noArgs" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\ReturningArgs\noArgs.robot">
+<test id="s1-s3-s1-t1" name="Robot First test case">
+<kw name="Cancatening username and passowrd">
+<arguments>
+<arg>Hi</arg>
+<arg>Hi</arg>
+</arguments>
+<msg timestamp="20200727 07:46:53.654" level="FAIL">No keyword with name 'Cancatening username and passowrd' found. Did you mean:
+    Resource3.Cancatening Username And Password</msg>
+<status status="FAIL" starttime="20200727 07:46:53.654" endtime="20200727 07:46:53.654"></status>
+</kw>
+<status status="FAIL" starttime="20200727 07:46:53.645" endtime="20200727 07:46:53.655" critical="yes">No keyword with name 'Cancatening username and passowrd' found. Did you mean:
+    Resource3.Cancatening Username And Password</status>
+</test>
+<status status="FAIL" starttime="20200727 07:46:53.617" endtime="20200727 07:46:53.657"></status>
+</suite>
+<suite id="s1-s3-s2" name="TC 001 BDD" source="C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\ReturningArgs\TC_001_BDD.robot">
+<test id="s1-s3-s2-t1" name="Testcase in BDD Format">
+<kw name="Given Start Browser and maximise" library="Resource3">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://www.thetestingworld.com/testings</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200727 07:46:53.674" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<status status="PASS" starttime="20200727 07:46:53.674" endtime="20200727 07:47:04.126"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200727 07:47:04.126" endtime="20200727 07:47:08.253"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:46:53.673" endtime="20200727 07:47:08.253"></status>
+</kw>
+<kw name="When Creating Folder" library="Resource3">
+<arguments>
+<arg>Ashini</arg>
+<arg>Venkat</arg>
+</arguments>
+<kw name="Create Folder" library="Userkeywordmkdir">
+<arguments>
+<arg>${foldername}</arg>
+</arguments>
+<status status="PASS" starttime="20200727 07:47:08.255" endtime="20200727 07:47:08.256"></status>
+</kw>
+<kw name="Create Sub Folder" library="Userkeywordmkdir">
+<arguments>
+<arg>${subfoldername}</arg>
+</arguments>
+<status status="PASS" starttime="20200727 07:47:08.256" endtime="20200727 07:47:08.258"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"Task completed successffully"</arg>
+</arguments>
+<msg timestamp="20200727 07:47:08.259" level="INFO">"Task completed successffully"</msg>
+<status status="PASS" starttime="20200727 07:47:08.258" endtime="20200727 07:47:08.259"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:47:08.254" endtime="20200727 07:47:08.260"></status>
+</kw>
+<kw name="Then Cancatening username and password" library="Resource3">
+<arguments>
+<arg>Testing</arg>
+<arg>Ashini</arg>
+</arguments>
+<kw name="Concatenate Two Values" library="Userkeywordmkdir">
+<arguments>
+<arg>${username}</arg>
+<arg>${password}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20200727 07:47:08.268" level="INFO">${result} = Testing Ashini</msg>
+<status status="PASS" starttime="20200727 07:47:08.267" endtime="20200727 07:47:08.268"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<msg timestamp="20200727 07:47:08.269" level="INFO">Testing Ashini</msg>
+<status status="PASS" starttime="20200727 07:47:08.268" endtime="20200727 07:47:08.269"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:47:08.264" endtime="20200727 07:47:08.269"></status>
+</kw>
+<status status="PASS" starttime="20200727 07:46:53.672" endtime="20200727 07:47:08.271" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200727 07:46:53.660" endtime="20200727 07:47:08.275"></status>
+</suite>
+<status status="FAIL" starttime="20200727 07:46:53.613" endtime="20200727 07:47:08.281"></status>
+</suite>
+<status status="FAIL" starttime="20200727 07:42:17.281" endtime="20200727 07:47:08.287"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="5">Critical Tests</stat>
+<stat pass="8" fail="5">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Sanity</stat>
+<stat pass="0" fail="1">Smoke</stat>
+</tag>
+<suite>
+<stat pass="8" fail="5" id="s1" name="Testcases">Testcases</stat>
+<stat pass="4" fail="4" id="s1-s1" name="Basic cases">Testcases.Basic cases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="TC 001 FacebookLogin">Testcases.Basic cases.TC 001 FacebookLogin</stat>
+<stat pass="0" fail="2" id="s1-s1-s2" name="TC 001 SetupandTeardown">Testcases.Basic cases.TC 001 SetupandTeardown</stat>
+<stat pass="1" fail="0" id="s1-s1-s3" name="TC 001 Start close Browser">Testcases.Basic cases.TC 001 Start close Browser</stat>
+<stat pass="1" fail="0" id="s1-s1-s4" name="TC 001 StartBrowser">Testcases.Basic cases.TC 001 StartBrowser</stat>
+<stat pass="0" fail="1" id="s1-s1-s5" name="TC 001 Withreturnvalue">Testcases.Basic cases.TC 001 Withreturnvalue</stat>
+<stat pass="0" fail="1" id="s1-s1-s6" name="TC 00 ReadingJson">Testcases.Basic cases.TC 00 ReadingJson</stat>
+<stat pass="1" fail="0" id="s1-s1-s7" name="001 Keyworddefined">Testcases.Basic cases.001 Keyworddefined</stat>
+<stat pass="3" fail="0" id="s1-s2" name="Fetch Data">Testcases.Fetch Data</stat>
+<stat pass="1" fail="0" id="s1-s2-s1" name="TC 002 FetchData">Testcases.Fetch Data.TC 002 FetchData</stat>
+<stat pass="1" fail="0" id="s1-s2-s2" name="TC 003 Select List">Testcases.Fetch Data.TC 003 Select List</stat>
+<stat pass="1" fail="0" id="s1-s2-s3" name="TC 004 getvalues">Testcases.Fetch Data.TC 004 getvalues</stat>
+<stat pass="1" fail="1" id="s1-s3" name="ReturningArgs">Testcases.ReturningArgs</stat>
+<stat pass="0" fail="1" id="s1-s3-s1" name="noArgs">Testcases.ReturningArgs.noArgs</stat>
+<stat pass="1" fail="0" id="s1-s3-s2" name="TC 001 BDD">Testcases.ReturningArgs.TC 001 BDD</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200727 07:42:29.148" level="ERROR">Error in file 'C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_001_SetupandTeardown.robot' on line 3: Resource file '..\Resources\Resource2.robot' does not exist.</msg>
+<msg timestamp="20200727 07:44:44.111" level="ERROR">Error in file 'C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_001_Withreturnvalue.robot' on line 3: Resource file '..\Resources\Resource1.robot' does not exist.</msg>
+<msg timestamp="20200727 07:44:44.141" level="ERROR">Error in file 'C:\Users\Subhashini\PycharmProjects\RobotAutomation\Testcases\Basic cases\TC_00_ReadingJson.robot' on line 3: Importing test library 'C:\Users\Subhashini\PycharmProjects\RobotAutomation\ExternalKeywords\Locators.py' failed: ModuleNotFoundError: No module named 'jsonpath'
+Traceback (most recent call last):
+  File "C:\Users\Subhashini\PycharmProjects\RobotAutomation\ExternalKeywords\Locators.py", line 2, in &lt;module&gt;
+    import jsonpath
+PYTHONPATH:
+  C:\Users\SUBHAS~1\PycharmProjects\python\venv\Scripts\robot.exe
+  C:\Users\Subhashini\AppData\Local\Programs\Python\Python38-32\python38.zip
+  C:\Users\Subhashini\AppData\Local\Programs\Python\Python38-32\DLLs
+  C:\Users\Subhashini\AppData\Local\Programs\Python\Python38-32\lib
+  C:\Users\Subhashini\AppData\Local\Programs\Python\Python38-32
+  c:\users\subhashini\pycharmprojects\python\venv
+  c:\users\subhashini\pycharmprojects\python\venv\lib\site-packages</msg>
+</errors>
+</robot>

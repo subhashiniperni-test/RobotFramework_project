@@ -1,0 +1,9 @@
+1595815952631	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\SUBHAS~1\\AppData\\Local\\Temp\\rust_mozprofileTx1ZhH"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1595815970681	Marionette	INFO	Listening on port 58451
+1595815971061	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595815974979	Marionette	INFO	Stopped listening on port 58451
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 2300, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 522
