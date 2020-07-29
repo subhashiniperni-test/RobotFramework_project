@@ -2,7 +2,7 @@
     "Registration":
         {
             "username_textbox_name" : "fld_username",
-            "email_textbox_xpath" : "fld_email",
+            "email_textbox_name" : "fld_email",
             "password_textbox_name" : "fld_password"
 
         }
